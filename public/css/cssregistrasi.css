@@ -1,0 +1,260 @@
+@font-face{
+    font-family: Romanesco;
+    src: url('../font/Romanesco/Romanesco-Regular.ttf');
+}
+@font-face {
+    font-family: Sansita;
+    src: url('../font/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf');
+}
+
+:root{
+    --coklat:#C9AD1A;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--coklat);
+    color: #fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+html{
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+section{
+    font-family: Sansita;
+    padding: 2rem 9%;
+}
+footer h1{
+    font-family: Sansita;
+    color: #C9AD1A;
+}
+header{
+    font-family: Romanesco;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1 rem rgba(0, 0, 0, 1);
+}
+header .logo i{
+    padding-right: .5rem;
+}
+header .navbar a{
+    font-size: 3rem;
+    margin-left: 3rem;
+    color: #666;
+    text-decoration: none;
+}
+header .navbar a:hover{
+    color: var(--coklat);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background: url(../images/bg2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.loginBox{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 630px;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .7);
+}
+.loginBox h2{
+    margin: 0;
+    padding: 0 0 50px;
+    color: #efed40;
+    font-size: 40px;
+    text-align: center;
+}
+.loginBox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="email"],
+.loginBox input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+::placeholder{
+    color: rgba(225, 225, 225, .5);
+}
+.loginBox button{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #2268F0;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.loginBox button:hover{
+    background: #407bf2;
+}
+p{
+    font-size: 1.7rem;
+}
+
+
+#menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+}
+.aboutUs{
+    background-color: black;
+}
+.aboutUs div img{
+    width: 65px;
+    height: 80px;
+}
+.icon {
+    padding-left: 75px;
+    margin-top: -70px;
+    color: #fff;
+}
+#icon{
+    padding-left: 75px;
+    color: #fff;
+}
+.button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 7px 12px;
+    background: var(--coklat);
+    box-shadow: rgba(0, 0, 0, 0.15);
+}
+center p{
+    color: #fff;
+    padding-left: 40rem;
+    padding-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        border-top: 1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid var(--coklat);
+        background: white;
+    }
+}
+@media(max-width:400px){
+    html{
+        font-size: 50%;
+    }
+    
+}
+#preloader{ 
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    background: #191819 url("../images/loding.gif") no-repeat  center;
+}

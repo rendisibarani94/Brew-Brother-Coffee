@@ -1,0 +1,130 @@
+@font-face{
+    font-family: Romanesco;
+    src: url('../font/Romanesco/Romanesco-Regular.ttf');
+}
+
+:root{
+    --coklat:#C9AD1A;
+}
+
+*{
+    font-family: Romanesco;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--coklat);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background:#f7f7f7;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1 rem rgba(0, 0, 0, 1);
+}
+
+
+header .logo i{
+    padding-right: .5rem;
+}
+header .navbar a{
+    font-size: 3rem;
+    margin-left: 3rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color: var(--coklat);
+}
+
+#menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        border-top: 1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid var(--coklat);
+        background: white;
+    }
+}
+@media(max-width:400px){
+    html{
+        font-size: 50%;
+    }
+    
+}
+h1 {
+
+font-family: 'Romanesco';
+
+color: #000000;
+}
+span{
+    color: #C9AD1A;
+}
+p   {
+    font-size: 2.4rem;
+}

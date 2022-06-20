@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Sansita;
+    src: url('../font/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf');
+}
+
+footer{
+    background: black;
+    height: 400px;
+}
+footer h1 {
+    font-family: Sansita;
+    color: #C9AD1A;
+}
+.info-lokasi p {
+    color: white;
+    line-height: 50%;
+}
+.phone-num p{
+    color: white;
+}
+.useful-link a{
+    text-decoration: none;
+    color: white;
+}
+
+.useful-link p {
+    color:#C9AD1A;
+}
+.useful-link h5 {
+    color: white;
+}
+

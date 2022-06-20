@@ -1,0 +1,63 @@
+@font-face {
+    font-family: sansita;
+    src: url(../font/Sansita_Swashed/static/SansitaSwashed-Regular.ttf);
+}
+
+@font-face {
+    font-family: orelega;
+    src: url(../font/OrelegaOne-Regular.ttf);
+}
+
+#container{
+    background-color: rgb(115, 78, 7);
+}
+.judul h1 {
+    padding-top: 1rem;
+    font-family: sansita;
+    color:white;
+}
+
+.menu-judul{
+    width: 120px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.menu-judul-mcrse{
+    width: 140px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-judul-mcrse h4 {
+    font-family: sansita;
+    color: #C9AD1A;
+    text-align: center;
+}
+
+.menu-judul h4 {
+    font-family: sansita;
+    color: #C9AD1A;
+    text-align: center;
+}
+.btn-psn {
+    font-family: orelega;
+    color: white;
+    text-decoration: none;
+    background-color:#9C8F48;
+    padding: 5px;
+}
+.card-title-cfe{
+    font-family: sansita;
+}
+
+.card-text-hrg {
+    font-family: orelega;
+    color: black;
+}
+.icon-cfe {
+    width: 45px;
+    padding-bottom: 1rem;
+}
+
